@@ -1,15 +1,23 @@
-import { Text, View } from "react-native";
+import { ImageBackground, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View
       style={{
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
+        backgroundColor: "red",
       }}
     >
-      <Text>Home</Text>
+      <ImageBackground
+        source={require("../assets/images/backgrounds/prayer-pro-bg-fajr.png")}
+        style={{
+          flex: 1,
+          backgroundColor: "blue",
+        }}
+        resizeMode="cover"
+      >
+        <Text style={{ justifyContent: "center" }}>Home</Text>
+      </ImageBackground>
     </View>
   );
 }
