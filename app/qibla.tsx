@@ -2,21 +2,15 @@ import { ImageBackground, Text, View } from "react-native";
 
 export default function Qibla() {
   return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: "red",
-      }}
-    >
+    <View className="flex-1 bg-red-500">
       <ImageBackground
         source={require("../assets/images/backgrounds/prayer-pro-bg-asr.png")}
-        style={{
-          flex: 1,
-          backgroundColor: "blue",
-        }}
+        className="flex-1 bg-blue-600"
         resizeMode="cover"
       >
-        <Text style={{ justifyContent: "center" }}>Qibla</Text>
+        <View className="flex-1 items-center justify-center">
+          <Text className="text-white text-xl">Qibla</Text>
+        </View>
       </ImageBackground>
     </View>
   );
