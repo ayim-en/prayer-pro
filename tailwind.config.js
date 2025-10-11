@@ -6,6 +6,8 @@ module.exports = {
     "./app/**/*.{js,jsx,ts,tsx}",
     "./components/**/*.{js,jsx,ts,tsx}",
     "./screens/**/*.{js,jsx,ts,tsx}",
+    // include other common locations (safe to keep broad for Expo projects)
+    "./**/*.{js,jsx,ts,tsx,mdx}",
   ],
   presets: [require("nativewind/preset")],
   theme: {
